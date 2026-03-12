@@ -6,9 +6,11 @@ Portfolio-ready Python project that turns a retail orders dataset into a busines
 
 Open the published dashboard (GitHub Pages):
 
-- https://gera9999.github.io/business-sales-analytics-dashboard/
+- https://gera9999.github.io/business-sales-analytics-dashboard/docs/
 
 If the link shows a 404, GitHub Pages may not be enabled yet. See “View the dashboard on GitHub (no local Python)” below.
+
+Note: if your root URL `https://gera9999.github.io/business-sales-analytics-dashboard/` shows the README instead of the dashboard, set GitHub Pages to serve from `/docs` (Settings → Pages). Then the root URL will render the dashboard.
 
 It covers:
 - Data loading & cleaning (schema normalization + date parsing)
