@@ -1,0 +1,5 @@
+numpy>=1.26,<3
+pandas>=2.2,<3
+plotly>=5.20,<6
+prophet>=1.1,<2
+cmdstanpy>=1.2,<2
