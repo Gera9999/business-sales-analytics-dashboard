@@ -2,6 +2,14 @@
 
 Portfolio-ready Python project that turns a retail orders dataset into a business-focused analytics pipeline and an interactive BI-style dashboard.
 
+## Live dashboard
+
+Open the published dashboard (GitHub Pages):
+
+- https://gera9999.github.io/business-sales-analytics-dashboard/
+
+If the link shows a 404, GitHub Pages may not be enabled yet. See “View the dashboard on GitHub (no local Python)” below.
+
 It covers:
 - Data loading & cleaning (schema normalization + date parsing)
 - Executive KPIs (revenue, orders, customers, AOV, shipping time)
