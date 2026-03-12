@@ -47,7 +47,13 @@ def _kpi_card(title: str, value_text: str) -> go.Scatter:
         x=[0.5],
         y=[0.5],
         mode="text",
-        text=[f"<b>{value_text}</b><br><span style='font-size:12px'>{title}</span>"],
+        text=[
+            "<span style='font-size:30px'><b>"
+            + str(value_text)
+            + "</b></span><br><span style='font-size:14px'>"
+            + str(title)
+            + "</span>"
+        ],
         textposition="middle center",
         hoverinfo="skip",
         showlegend=False,
@@ -93,6 +99,7 @@ def build_sales_dashboard(artifacts: PipelineArtifacts) -> go.Figure:
             "Shipping Time by Ship Mode",
             "Shipping Time by Region",
         ),
+        row_heights=[0.08, 0.10, 0.12, 0.14, 0.12, 0.12, 0.16, 0.16],
         vertical_spacing=0.07,
         horizontal_spacing=0.06,
     )
@@ -471,12 +478,13 @@ def build_sales_dashboard(artifacts: PipelineArtifacts) -> go.Figure:
             "text": "Retail Sales Analytics Dashboard (Global Superstore)",
             "x": 0.01,
             "xanchor": "left",
+            "font": {"size": 22},
         },
         height=2100,
         template=template,
         margin={"l": 40, "r": 40, "t": 110, "b": 140},
         showlegend=False,
-        font={"size": 12},
+        font={"size": 13},
         hovermode="x unified",
     )
 
